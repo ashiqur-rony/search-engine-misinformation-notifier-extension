@@ -3,9 +3,9 @@ const filtered_words = words.filter( word => {
     return $( 'body:contains(' + word + ')' ).length > 0;
 } );
 
-let current_url = window.location.origin;
-let activate = current_url.includes( 'google.com' ) || current_url.includes( 'bing.com' ) ||
-    current_url.includes( 'duckduckgo.com' ) || current_url.includes( 'yahoo.com' );
+let current_url = window.location.href;
+let activate = current_url.includes( 'google.com/search' ) || current_url.includes( 'bing.com/search' ) ||
+    current_url.includes( 'duckduckgo.com' ) || current_url.includes( 'search.yahoo.com' );
 
 if ( activate && filtered_words !== undefined && filtered_words.length > 0 ) {
     let html = "<span class='close-popup'>&times;</span>";
