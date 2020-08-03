@@ -28,3 +28,7 @@ _Image: Duckduckgo search result page_
 ![Yahoo! search result page](https://imgur.com/eHuIcBW.png)
 
 _Image: Yahoo! search result page_
+
+![Privacy alert](https://imgur.com/xq2lPc0.png)
+
+_Image: Privacy alert from the extension_
