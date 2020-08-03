@@ -1,8 +1,13 @@
-const words = ['covid', 'COVID', 'covid19', 'COVID19', 'hydroxychloroquin', 'alcohol'];
+const words = ['covid', 'COVID', 'covid19', 'COVID19', 'hydroxychloroquin', 'alcohol', 'corona', 'coronavirus'];
 const filtered_words = words.filter( word => {
     return $( 'body:contains(' + word + ')' ).length > 0;
 } );
-if ( filtered_words !== undefined && filtered_words.length > 0 ) {
+
+let current_url = window.location.origin;
+let activate = current_url.includes( 'google.com' ) || current_url.includes( 'bing.com' ) ||
+    current_url.includes( 'duckduckgo.com' ) || current_url.includes( 'yahoo.com' );
+
+if ( activate && filtered_words !== undefined && filtered_words.length > 0 ) {
     let html = "<span class='close-popup'>&times;</span>";
     html += "<p>Please visit " +
         "<a href='https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public' target='_blank'>" +
@@ -15,7 +20,6 @@ if ( filtered_words !== undefined && filtered_words.length > 0 ) {
     html += "</ul>";
 
     $( 'body' ).append( "<div class='misinformation-popup'>" + html + "</div>" );
-    console.log( filtered_words );
 }
 
 $( '.misinformation-popup .close-popup' ).on( 'click', function () {
