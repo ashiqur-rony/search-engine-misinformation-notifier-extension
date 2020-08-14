@@ -1,4 +1,5 @@
 # Search Engine Misinformation Notifier Extension (SEMiNExt)
+[![DOI](https://zenodo.org/badge/283139869.svg)](https://zenodo.org/badge/latestdoi/283139869)  
 An Google Chrome extension to filter public health related rumors on popular search engine results.
 
 This extension traverse the content of the search results and looks for trigger keywords for misinformation. `covid`, `covid19`, `corona` etc. are few of them. If any of the trigger keyword is found, an alert is displayed on the website to redirect user to the WHO website. Currently the extension only works on `google.com`, `bing.com`, `yahoo.com`, and `duckduckgo.com` and shows the relevant alert.
