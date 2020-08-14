@@ -1,7 +1,7 @@
 {
   "name": "SEMiNExt",
   "description": "Search Engine Misinformation Notifier Extension - A browser extension to filter public health rumors.",
-  "version": "1.2",
+  "version": "v1.0.0",
   "permissions": [
     "activeTab",
     "declarativeContent",
