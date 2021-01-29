@@ -1,0 +1,401 @@
+
+const trainingData = [
+
+
+
+// falce start
+
+
+
+    { // false start
+        input: "consuming alcohol destroys covid 19",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol destroys coronavirus",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol destroys the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol destroys the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "can drinking alcohol protect people from covid 19?",
+        output: { false: 1}
+    },{
+        input: "can drinking alcohol protect people from coronavirus?",
+        output: { false: 1}
+    },{
+        input: "can drinking alcohol protect people from the new coronavirus?",
+        output: { false: 1}
+    },{
+        input: "can drinking alcohol protect people from the novel coronavirus?",
+        output: { false: 1}
+    },{
+        input: "does consuming alcohol kills covid 19?",
+        output: { false: 1}
+    },{
+        input: "Does consuming alcohol kills coronavirus?",
+        output: { false: 1}
+    },{
+        input: "Does consuming alcohol kills new coronavirus?",
+        output: { false: 1}
+    },{
+        input: "Does consuming alcohol kills novel coronavirus?",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol can cure covid 19",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol can cure coronavirus",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol can cure the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "consuming alcohol can cure the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol treats covid 19",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol treats coronavirus",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol treats new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol treats the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Spraying alcohol on the skin kills covid 19 in the body",
+        output: { false: 1}
+    },{
+        input: "Spraying alcohol on the skin kills coronavirus in the body",
+        output: { false: 1}
+    },{
+        input: "Spraying alcohol on the skin kills the new coronavirus in the body",
+        output: { false: 1}
+    },{
+        input: "Spraying alcohol on the skin kills the novel coronavirus in the body",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol prevent covid 19 infection",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol prevent coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol prevent the new coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Drinking or consuming alcohol prevent the novel coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Spreading or spraying alcohol on body prevents covid 19 infection",
+        output: { false: 1}
+    },{
+        input: "Spreading or spraying alcohol on body prevents coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Spreading or spraying alcohol on body prevents the new coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Spreading or spraying alcohol on body prevents the novel coronavirus infection",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure covid 19",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the medicine for covid 19?",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the medicine for coronavirus?",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the medicine for the new coronavirus?",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the medicine for the novel coronavirus?",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure covid 19",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine can cure the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Effectiveness of Hydroxychloroquine in covid 19",
+        output: { false: 1}
+    },{
+        input: "Effectiveness of Hydroxychloroquine in coronavirus",
+        output: { false: 1}
+    },{
+        input: "Effectiveness of Hydroxychloroquine in the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Effectiveness of Hydroxychloroquine in the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine against covid 19",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine against coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine against the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine against the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the drug fo covid 19",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the drug fo coronavirus",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the drug fo the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Is Hydroxychloroquine the drug fo the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine potent against covid 19",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine potent against coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine potent against the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine potent against the novel coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine has worked in treating covid 19",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine has worked in treating coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine has worked in treating the new coronavirus",
+        output: { false: 1}
+    },{
+        input: "Hydroxychloroquine has worked in treating the novel coronavirus",
+        output: { false: 1}
+    }
+
+
+    // true strat
+
+
+,{
+        input: "alcohol does not protect against infection or illness relating to coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol does not protect against infection or illness relating to the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol does not protect against infection or illness relating to to the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol does not protect against infection or illness relating to to the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "consuming alcohol is not a cure for Covid19",
+        output: { true: 1 }
+    } ,{
+        input: "consuming alcohol is not a cure for coronavirus",
+        output: { true: 1 }
+    } ,{
+        input: "consuming alcohol is not a cure for the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "consuming alcohol is not a cure for the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Consuming alcohol can not destroy covid 19",
+        output: { true: 1 }
+    },{
+        input: "Consuming alcohol can not destroy coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Consuming alcohol can not destroy the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Consuming alcohol can not destroy the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not protect you from COVID19",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not protect you from coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not protect you from the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not protect you from the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not reduce the chance of acquiring COVID19",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not reduce the chance of acquiring coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not reduce the chance of acquiring the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking alcohol does not reduce the chance of acquiring the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol plays no role in supporting the immune system to fight COVID19",
+        output: { true: 1 }
+    },{
+        input: "alcohol plays no role in supporting the immune system to fight coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol plays no role in supporting the immune system to fight the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "alcohol plays no role in supporting the immune system to fight the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking or consuming alcohol does not reduce the risk of COVID19",
+        output: { true: 1 }
+    },{
+        input: "Drinking or consuming alcohol does not reduce the risk of coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking or consuming alcohol does not reduce the risk of new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Drinking or consuming alcohol does not reduce the risk of novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot treat COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot treat coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot treat the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot treat the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not beneficial for COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not beneficial for coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not beneficial for the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not beneficial for the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine will not prevent COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine will not prevent coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine will not prevent the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine will not prevent the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not for COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not for coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not for the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not for the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not the drug for COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not the drug for coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not the drug for the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine is not the drug for the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot kill COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot kill coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot kill the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine cannot kill the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine do not work against COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine do not work against coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine do not work against the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine do not work against the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine can not stop COVID19",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine can not stop coronavirus induced illness",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine can not stop the new coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine can not stop the novel coronavirus",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine has no benefit for hospitalised COVID19 patients",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine has no benefit for hospitalised coronavirus induced illness patients",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine has no benefit for hospitalised the new coronavirus patients",
+        output: { true: 1 }
+    },{
+        input: "Hydroxychloroquine has no benefit for hospitalised the novel coronavirus patients",
+        output: { true: 1 }
+    }
+]
